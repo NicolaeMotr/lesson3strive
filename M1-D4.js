@@ -97,17 +97,10 @@ console.log(reverseString("strive"))
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
-/*
+
 const upperFirst = (s) => {
                     if (typeof s !== 'string') return ''
                     return s.charAt(0).toUpperCase() + s.slice(1)
-}
-console.log(upperFirst("strive"))
-*/
-// or
-
-function upperFirst(string) {
-                    return string.charAt(0).toUpperCase() + s.slice(1)
 }
 console.log(upperFirst("strive"))
 
@@ -116,7 +109,10 @@ console.log(upperFirst("strive"))
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+function cutString(str) {
+                    return str.slice(1, -1)
+}
+console.log(cutString("strive"))
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10

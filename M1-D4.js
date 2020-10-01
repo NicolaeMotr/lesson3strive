@@ -10,17 +10,22 @@ ASSIGNMENT RULES
 Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
 */
 
-const l1 = 7;
-const l2 = 8;
-const area = (base, altezza) => base * altezza
+const area = (l1, l2) => l1 * l2;
 
-console.log(area(7000, l2)) 
+console.log(area(7000, 200));
 
 
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
+
+function crazySum (a, b) {
+                    if (a === b) {
+                                        return (a +b) *3;
+                    }
+}
+console.log(crazySum(3, 3));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
@@ -29,6 +34,18 @@ Returns triple their absolute difference if
 the specified
 number is greater than 19.
 */
+
+function crazyDiff (value) {
+                    var absoluteValue = value;
+                    if (absoluteValue < 0) {
+                                     absoluteValue = absoluteValue * -1;
+                    }
+                    
+                    if (absoluteValue > 19) {
+                                        return (absoluteValue - 19) * 3;
+                    }
+}
+console.log(crazyDiff(20));
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.

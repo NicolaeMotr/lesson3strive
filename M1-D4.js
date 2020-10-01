@@ -36,7 +36,7 @@ number is greater than 19.
 */
 
 function crazyDiff (value) {
-                    var absoluteValue = value;
+                    let absoluteValue = value;
                     if (absoluteValue < 0) {
                                      absoluteValue = absoluteValue * -1;
                     }
@@ -51,32 +51,66 @@ console.log(crazyDiff(20));
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
 */
 
-/* WRITE YOUR CODE HERE */
+function boundary(N) {
+                    if( (N >= 20 && N <= 100) || N == 400 ) {
+                                        return true;
+                    }
+                    return false;
+}
+console.log(boundary(400));
 
 /* EXERCISE 5
-Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
+Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, 
+if the given string begins with "Strive" then return the original string.
 */
 
-/* WRITE YOUR CODE HERE */
+function stravify(S) {
+                    if (S.match('Strive')) {
+                                        return "Strive" + S;
+                    } 
+                    return S;
+}
+console.log(stravify('Strive Ciao'));
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
 */
 
-/* WRITE YOUR CODE HERE */
+function check3and7(operator) {
+                    if (S.match('Strive')) {
+                                        return "Strive" + S;
+                    }
+                    return S;
+}
 
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+function reverseString(str) {
+                    return str.split("").reverse().join("");
+}
+
+console.log(reverseString("strive"))
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
+/*
+const upperFirst = (s) => {
+                    if (typeof s !== 'string') return ''
+                    return s.charAt(0).toUpperCase() + s.slice(1)
+}
+console.log(upperFirst("strive"))
+*/
+// or
 
-/* WRITE YOUR CODE HERE */
+function upperFirst(string) {
+                    return string.charAt(0).toUpperCase() + s.slice(1)
+}
+console.log(upperFirst("strive"))
+
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.

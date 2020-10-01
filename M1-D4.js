@@ -10,6 +10,14 @@ ASSIGNMENT RULES
 Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
 */
 
+const l1 = 7;
+const l2 = 8;
+const area = (base, altezza) => base * altezza
+
+console.log(area(7000, l2)) 
+
+
+
 /* EXERCISE 2
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */

@@ -20,9 +20,9 @@ console.log(area(7000, 200));
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
 
-function crazySum (a, b) {
+function crazySum(a, b) {
                     if (a === b) {
-                                        return (a +b) *3;
+                                        return (a + b) * 3;
                     }
 }
 console.log(crazySum(3, 3));
@@ -35,12 +35,12 @@ the specified
 number is greater than 19.
 */
 
-function crazyDiff (value) {
+function crazyDiff(value) {
                     let absoluteValue = value;
                     if (absoluteValue < 0) {
-                                     absoluteValue = absoluteValue * -1;
+                                        absoluteValue = absoluteValue * -1;
                     }
-                    
+
                     if (absoluteValue > 19) {
                                         return (absoluteValue - 19) * 3;
                     }
@@ -52,7 +52,7 @@ Write a function "boundary" which accept an integer N and returns true if N is w
 */
 
 function boundary(N) {
-                    if( (N >= 20 && N <= 100) || N == 400 ) {
+                    if ((N >= 20 && N <= 100) || N == 400) {
                                         return true;
                     }
                     return false;
@@ -67,7 +67,7 @@ if the given string begins with "Strive" then return the original string.
 function stravify(S) {
                     if (S.match('Strive')) {
                                         return "Strive" + S;
-                    } 
+                    }
                     return S;
 }
 console.log(stravify('Strive Ciao'));
@@ -77,12 +77,6 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
-function check3and7(operator) {
-                    if (S.match('Strive')) {
-                                        return "Strive" + S;
-                    }
-                    return S;
-}
 
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
@@ -123,4 +117,3 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
 */
-
